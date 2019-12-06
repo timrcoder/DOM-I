@@ -14,16 +14,16 @@ const siteContent = {
   "cta": {
     "h1": "DOM Is Awesome",
     "button": "Get Started",
-    "img-src": "img/header-img.png"
+    "img-src": "img/header-img.png"              // NOTE  CTA IMAGE      CTA IMAGE
   },
   "main-content": {
     "features-h4":"Features",
     "features-content": "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
     "about-h4":"About",
-
-
+// -------------------------
     "about-content": "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
-    "middle-img-src": "img/mid-page-accent.jpg",
+
+    "middle-img-src": "img/mid-page-accent.jpg", // NOTE    LONG IMG    LONG IMG
     "services-h4":"Services",
     "services-content": "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
     "product-h4":"Product",
@@ -49,6 +49,15 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 // ==================================================================================
 // ==================================================================================
 // ==================================================================================
+// let  longImg= document.getElementById("mid-page-accent.jpg");
+// longImg.setAttribute('src', siteContent ["main-content"]["middle-img-src"])
+
+
+// const middleImg = document.querySelector('.mid-page-accent.jpg');
+// middleImg.src = siteContent["main-content"]["middle-img-src"];  
+// ==================================================================================
+// ==================================================================================
+
 
 // NOTE   When inserting images you can use 1 of 2 methods:
 //       catImg.src = "url"
@@ -141,29 +150,19 @@ text2.textContent= "Features content elementum magna eros, ac posuere elvit temp
 
 
 
-
-
-
-
-
-
-
-
-
-
 // ------------ WORKS     WORKS     WORKS ------------------
 
-const a1 = document.querySelector('.container header nav a:nth-child(1)');
+const a1 = document.querySelector('.container header nav a:nth-child(1)');  //    NOTE  1ST A TAG
 a1.textContent= "Services"
-const a2 = document.querySelector('.container header nav a:nth-child(2)');
+const a2 = document.querySelector('.container header nav a:nth-child(2)');  //    NOTE  2ND A TAG
 a2.textContent= "Product"
-const a3 = document.querySelector('.container header nav a:nth-child(3)');
+const a3 = document.querySelector('.container header nav a:nth-child(3)');  //    NOTE  3RD A TAG
 a3.textContent= "Features"
-const a4 = document.querySelector('.container header nav a:nth-child(4)');
+const a4 = document.querySelector('.container header nav a:nth-child(4)');  //    NOTE  4TH A TAG
 a4.textContent= "Vision"
-const a5 = document.querySelector('.container header nav a:nth-child(5)');
-a5.textContent= "About                                                                                                                                                                                                                                                                                                                                                           "
-const a6 = document.querySelector('.container header nav a:nth-child(6)');
+const a5 = document.querySelector('.container header nav a:nth-child(5)');  //    NOTE  5TH A TAG
+a5.textContent= "About"                                                                                                                                                                                                          
+const a6 = document.querySelector('.container header nav a:nth-child(6)');  //    NOTE  6TH A TAG
 a6.textContent= "Contact"
 
 // ------------ WORKS     WORKS     WORKS ------------------
@@ -198,7 +197,7 @@ const email =document.querySelector("site-content p:nth-child(8)")
 contactP3.textContent= "sales@gmail";
 
 // // ------------ WORKS     WORKS     WORKS ------------------
-const ctaImg= document.querySelector("#cta-img")
+const ctaImg= document.querySelector("#cta-img")                      //  NOTE ROUND IMAGE
 ctaImg.src = 'img/header-img.png';
 
 // ------------ WORKS     WORKS     WORKS ------------------
@@ -206,9 +205,17 @@ const headerH1= document.querySelector('h1')
 headerH1.style.color= "red";
 
 // ------------ WORKS     WORKS     WORKS ------------------
-const middleImg = document.querySelector('.example');
-middleImg.src = siteContent["main-content"]["middle-img-src"];
+const middleImg = document.querySelector('#middle-img');
+middleImg.src = "img/mid-page-accent.jpg"     //  NOTE MIDDLE IMAGE
 
+
+// const middleImg = document.querySelector('.mid-page-accent.jpg');      //  NOTE MIDDLE IMAGE
+// middleImg.src = siteContent["main-content"]["middle-img-src"]; 
+
+
+
+
+ 
 // ==================================================================================
 // ==================================================================================
 // ==================================================================================
@@ -219,10 +226,10 @@ middleImg.src = siteContent["main-content"]["middle-img-src"];
 // let ctaImg = document.querySelector("#cta-img");
 // ctaImg.setAttribute=  "img/header-img.png"
 // -------------------------------------------------------------
-// const midImg= document.querySelector(".middle-img")
-// midImg.setAttribute= ("src", "/Users/TimGrey/DOM-I/img/mid-page-accent.jpg");
+// const midImg= document.querySelector("middle-img")
+// midImg.setAttribute= ("src", "img/mid-page-accent.jpg");
 // console.log(midImg)
-
+// img/mid-page-accent.jpg
 // -------------------------------------------------------------
 // const contactP2 =document.querySelector("p")
 // contactP2.textContent= "1 (888) 888-8888";
