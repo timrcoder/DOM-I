@@ -182,7 +182,12 @@ contactH4.textContent=  " Contact ";
 
 // ------------ WORKS     WORKS     WORKS ------------------
 const ctaButton= document.querySelector(".cta button")
-ctaButton.textContent=      "Get Started"
+ctaButton.textContent=  "Get Started"
+ctaButton.style.borderRadius= "9px"
+ctaButton.style.backgroundColor= "cyan"
+
+
+
 
 // ------------ WORKS     WORKS     WORKS ------------------
 const cta= document.querySelector(".cta h1")
@@ -209,11 +214,21 @@ const middleImg = document.querySelector('#middle-img');
 middleImg.src = "img/mid-page-accent.jpg"     //  NOTE MIDDLE IMAGE
 
 
-// const middleImg = document.querySelector('.mid-page-accent.jpg');      //  NOTE MIDDLE IMAGE
+// const middleImg = document.querySelector('.mid-page-accent.jpg');      //  NOTE    MIDDLE IMAGE
 // middleImg.src = siteContent["main-content"]["middle-img-src"]; 
 
 
+// ------------ WORKS     WORKS     WORKS ------------------              
+const prependedItem= document.querySelector('nav')                        //  NOTE      PREPENDED   
+// prependedItem.textContent="Sales"
+prependedItem.style.color="blue"
+prependedItem.prepend("Prepended!")
 
+
+// ------------ WORKS     WORKS     WORKS ------------------
+
+const appendedItem= document.querySelector('nav')                         //  NOTE      APPENDED   
+appendedItem.append("Appended!")
 
  
 // ==================================================================================
